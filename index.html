@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'MyPortfolio/style.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght400;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <img src="{% static 'Myportfolio/pic.jpeg' %}" alt="Profile Image" class="pic">
+        <h1>Venkata Manikanta Batlanki</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Projects</a>
+            <a href="#certification">Certification</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Aspiring Python Full Stack Developer with strong knowledge in Python, Django, and web technologies. 
+            Skilled in building scalable web applications using HTML, CSS, JavaScript, and MySQL. 
+            Passionate about writing clean and efficient code, solving real-world problems, and continuously learning new technologies. 
+            Looking for an opportunity to contribute to a dynamic team and grow as a software developer.
+        </p>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <div class="edu">
+            <h3>Bachelor of Technology (B.Tech)</h3>
+            <p>Sri Vasavi Institute of Engineering And Technology.</p>
+            <p>Electronics And Communication Engineering(ECE).</p>
+            <p>2021-2025 | CGPA: 7.28</p>
+        </div>
+        <div class="edu">
+            <h3>Intermediate</h3>
+            <p>Sri Vijayanandha Juniour College.</p>
+            <p>Maths Physics Chemistry(MPC).</p>
+            <p>2019-2021 | Percentage: 80%</p>
+        </div>
+        <div class="edu">
+            <h3>SSC</h3>
+            <p>Sri Sai Baba High School.</p>
+            <p>2018-2019 | GPA: 8.0</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>MySQL</li>
+            <li>PL/SQL(Basics)</li>
+            <li>MongoDB</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java Script</li>
+            <li>Boot Strap</li>
+            <li>Django</li>
+            <li>React.js</li>
+            <li>Rest API</li>
+        </ul>
+    </section>
+    <section id="project">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>ATM Machine Transactions</h3>
+            <p>
+                Developed a Python-based ATM transaction System to simulate real time banking operations such as 
+                <ul>
+                    <li>Balance Checking</li>
+                    <li>Cash WithDrawl</li>
+                    <li>Cash Deposit</li>
+                    <li>Pin validation</li>
+                </ul>
+                the system Ensures secure user Athuentication and Maintains accurate Transaction Records.
+                This Project Demonstrate Strong Skills in Python Logic.
+            </p>
+            <p><strong>Tools Used:</strong></p>
+            <ul>
+                <li>
+                    Python
+                </li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>Quiz Management System</h3>
+            <p>
+                Developed a Python-Based Application to Create ,Manage, And Evaluate Quizzes . Implemented Features
+                Like User Authentication,Automated Scoring , And Performance Reports to Simplify The Quiz Process.
+            </p>
+            <p><strong>Tools Used:</strong></p>
+            <ul>
+                <li>Python</li>
+                <li>MYSQL</li>
+            </ul>
+        </div>
+         <div class="project">
+            <h3>Simple Calculator Web Application</h3>
+            <p>Developed a Full-stack web applications using Django.</p>
+            <p>I created a simple calculator web application using Django that allows users to perform basic operations
+               like addition, subtraction, multiplication, and division. The user enters two numbers on a web page, and the
+               data is sent to the Django Backend where the calculation is done using Python. The result is then displayed
+               on the same page. This project helped me understand how Django handles forms, views, and passing data
+               between the front-end and Backend.
+            </p>
+            <p><strong>Tools Used:</strong></p>
+            <ul>
+                <li>Python</li>
+                <li>MySQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Django</li>
+                <li>RestApi</li>
+                <li>Vs Code</li>
+            </ul>
+        </div>
+    </section>
+    <section id="certification">
+        <h2>Certifications</h2>
+        <div class="cert">
+            <h3>Python Full Stack Developer</h3>
+            <p> I have successfully completed the Python Full Stack Developer training program at V Cubes Software
+                Solutions. This course covered both front-end and Backend technologies including Python, Django, HTML, CSS, JavaScript, and SQL. I gained hands-on experience in building web applications and
+                working with databases. This training enhanced my problem-solving abilities and coding skills through
+                practical projects. It provided a strong foundation to pursue a career as a Full Stack Developer.
+            </p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact">
+            <p>📞Mobile : +91 8179824741</p>
+            <p>📧Email : <a href="https://mail.google.com/mail/?view=cm&to=onlygodsb2k.741@gmail.com">Send Email</a></p>
+            <p>🐱GitHub : <a href="https://github.com/Manikantabatlanki/Projects">GitHub</a></p>
+            <p>💼LinkedIn : <a href="https://www.linkedin.com/in/manikanta-batlanki-617955362">LinkedIn</a></p>
+            <p>📍Location : Hyderabad</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; <span id="year"></span>My 2026 Portfolio</p>
+    </footer>
+    <script src="{% static 'MyPortfolio/script.js' %}"></script>
+</body>
+</html>
